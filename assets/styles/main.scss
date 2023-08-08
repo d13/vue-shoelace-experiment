@@ -1,0 +1,257 @@
+/**
+ * Property definitions
+ */
+
+:root {
+  --global-background-color: var(--sl-color-neutral-0);
+  --global-foreground-color: var(--sl-color-neutral-800);
+  --global-divider-color: var(--sl-color-neutral-200);
+
+  --global-border-width: 1px;
+  --global-border-radius: var(--sl-border-radius-medium);
+}
+
+/**
+ * Baseline
+ */
+
+/* avoids FOUC for elements not yet called with `define()` */
+:not(:defined) {
+  visibility: hidden;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+::selection {
+  background-color: var(--sl-color-primary-200);
+  color: var(--sl-color-neutral-900);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  font-size: 16px;
+  text-size-adjust: 100%;
+  line-height: var(--sl-line-height-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100%;
+  font-family: var(--sl-font-sans);
+  font-weight: var(--sl-font-weight-normal);
+  background-color: var(--global-background-color);
+  color: var(--global-foreground-color);
+}
+
+img {
+  max-width: 100%;
+}
+
+[tabindex],
+a:focus,
+button:focus {
+  outline: none;
+}
+
+[tabindex]:focus-visible,
+a:focus-visible,
+button:focus-visible {
+  outline: var(--sl-focus-ring);
+  outline-offset: var(--sl-focus-ring-offset);
+}
+
+[tabindex='-1']:focus {
+  outline: none !important;
+}
+
+hr {
+  border: none;
+  border-bottom: solid var(--global-border-width) var(--global-divider-color);
+  margin: var(--sl-spacing-medium) 0;
+}
+
+/**
+ * Block type
+ */
+
+h1,
+.display-1,
+h2,
+.display-2,
+h3,
+.display-3,
+h4,
+.display-4,
+h5,
+.display-5,
+h6,
+.display-6 {
+  font-weight: var(--sl-font-weight-semibold);
+}
+
+h1,
+.display-1 {
+  font-size: 2.5rem;
+}
+
+h2,
+.display-2 {
+  font-size: 1.875rem;
+}
+
+h3,
+.display-3 {
+  font-size: 1.625rem;
+}
+
+h4,
+.display-4 {
+  font-size: 1.375rem;
+}
+
+h5,
+.display-5 {
+  font-size: 1.125rem;
+}
+
+h6,
+.display-6 {
+  font-size: var(--sl-font-size-medium);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 var(--sl-spacing-x-large) 0;
+}
+
+p {
+  margin: 0 0 var(--sl-spacing-medium) 0;
+}
+
+/* blockquote */
+
+/**
+ * Lists
+ */
+
+ul,
+ol,
+dl {
+  margin: 0 0 var(--sl-spacing-medium) 0;
+}
+
+ul,
+ol {
+  padding: 0 0 0 var(--sl-spacing-large);
+}
+
+ul {
+  list-style: disc;
+}
+
+dt {
+  font-weight: var(--sl-font-weight-bold);
+}
+
+li,
+dt,
+dd {
+  padding: 0;
+  margin: 0 0 var(--sl-spacing-2x-small) 0;
+}
+
+li ul,
+li ol,
+dd dl {
+  margin-top: var(--sl-spacing-2x-small);
+}
+
+ul ul:last-child,
+ul ol:last-child,
+ol ul:last-child,
+ol ol:last-child,
+dl dl:last-child {
+  margin-bottom: 0;
+}
+
+/**
+ * Inline type
+ */
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: var(--sl-font-weight-bold);
+}
+
+abbr[title] {
+  text-decoration: none;
+  border-bottom: dashed 1px var(--sl-color-primary-700);
+  cursor: help;
+}
+
+a {
+  color: var(--sl-color-primary-700);
+}
+
+a:hover {
+  color: var(--sl-color-primary-800);
+}
+
+s {
+  text-decoration: line-through;
+}
+
+mark,
+ins,
+del {
+  border-radius: var(--sl-border-radius-medium);
+  padding: 0.125em 0.25em;
+}
+
+ins,
+del {
+  text-decoration: none;
+}
+
+ins {
+  background-color: var(--sl-color-green-200);
+  color: var(--sl-color-green-900);
+}
+
+del {
+  background-color: var(--sl-color-red-200);
+  color: var(--sl-color-red-900);
+}
+
+mark {
+  background-color: var(--sl-color-yellow-200);
+}
+
+/**
+ * Monospace type (code, pre, kbd, samp)
+ */
+
+/**
+ * Table
+ */
+
+/**
+ * Form
+ */

@@ -1,0 +1,13 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": true,
+    "source.fixAll.eslint": true
+  },
+  "[html][javascript][json][jsonc][markdown][css][scss][svg][typescript][typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.preferences.importModuleSpecifier": "project-relative",
+  "html.customData": [
+    "/node_modules/@shoelace-style/shoelace/dist/shoelace-html-data.json"
+  ]
+}

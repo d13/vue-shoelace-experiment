@@ -1,0 +1,65 @@
+export default defineNuxtPlugin(async () => {
+  if (process.client) {
+    const { setBasePath } = await import('@shoelace-style/shoelace/dist/utilities/base-path.js');
+    setBasePath('/shoelace');
+
+    // TODO: should probably comment the unused components
+    await import('@shoelace-style/shoelace/dist/components/mutation-observer/mutation-observer.js');
+    await import('@shoelace-style/shoelace/dist/components/alert/alert.js');
+    await import('@shoelace-style/shoelace/dist/components/animated-image/animated-image.js');
+    await import('@shoelace-style/shoelace/dist/components/animation/animation.js');
+    await import('@shoelace-style/shoelace/dist/components/avatar/avatar.js');
+    await import('@shoelace-style/shoelace/dist/components/badge/badge.js');
+    await import('@shoelace-style/shoelace/dist/components/breadcrumb/breadcrumb.js');
+    await import('@shoelace-style/shoelace/dist/components/breadcrumb-item/breadcrumb-item.js');
+    await import('@shoelace-style/shoelace/dist/components/button/button.js');
+    await import('@shoelace-style/shoelace/dist/components/button-group/button-group.js');
+    await import('@shoelace-style/shoelace/dist/components/card/card.js');
+    await import('@shoelace-style/shoelace/dist/components/carousel/carousel.js');
+    await import('@shoelace-style/shoelace/dist/components/carousel-item/carousel-item.js');
+    await import('@shoelace-style/shoelace/dist/components/checkbox/checkbox.js');
+    await import('@shoelace-style/shoelace/dist/components/color-picker/color-picker.js');
+    await import('@shoelace-style/shoelace/dist/components/details/details.js');
+    await import('@shoelace-style/shoelace/dist/components/dialog/dialog.js');
+    await import('@shoelace-style/shoelace/dist/components/divider/divider.js');
+    await import('@shoelace-style/shoelace/dist/components/drawer/drawer.js');
+    await import('@shoelace-style/shoelace/dist/components/dropdown/dropdown.js');
+    await import('@shoelace-style/shoelace/dist/components/format-bytes/format-bytes.js');
+    await import('@shoelace-style/shoelace/dist/components/format-date/format-date.js');
+    await import('@shoelace-style/shoelace/dist/components/format-number/format-number.js');
+    await import('@shoelace-style/shoelace/dist/components/icon/icon.js');
+    await import('@shoelace-style/shoelace/dist/components/icon-button/icon-button.js');
+    await import('@shoelace-style/shoelace/dist/components/image-comparer/image-comparer.js');
+    await import('@shoelace-style/shoelace/dist/components/include/include.js');
+    await import('@shoelace-style/shoelace/dist/components/input/input.js');
+    await import('@shoelace-style/shoelace/dist/components/menu/menu.js');
+    await import('@shoelace-style/shoelace/dist/components/menu-item/menu-item.js');
+    await import('@shoelace-style/shoelace/dist/components/menu-label/menu-label.js');
+    await import('@shoelace-style/shoelace/dist/components/option/option.js');
+    await import('@shoelace-style/shoelace/dist/components/popup/popup.js');
+    await import('@shoelace-style/shoelace/dist/components/progress-bar/progress-bar.js');
+    await import('@shoelace-style/shoelace/dist/components/progress-ring/progress-ring.js');
+    await import('@shoelace-style/shoelace/dist/components/qr-code/qr-code.js');
+    await import('@shoelace-style/shoelace/dist/components/radio/radio.js');
+    await import('@shoelace-style/shoelace/dist/components/radio-button/radio-button.js');
+    await import('@shoelace-style/shoelace/dist/components/radio-group/radio-group.js');
+    await import('@shoelace-style/shoelace/dist/components/range/range.js');
+    await import('@shoelace-style/shoelace/dist/components/rating/rating.js');
+    await import('@shoelace-style/shoelace/dist/components/relative-time/relative-time.js');
+    await import('@shoelace-style/shoelace/dist/components/resize-observer/resize-observer.js');
+    await import('@shoelace-style/shoelace/dist/components/select/select.js');
+    await import('@shoelace-style/shoelace/dist/components/skeleton/skeleton.js');
+    await import('@shoelace-style/shoelace/dist/components/spinner/spinner.js');
+    await import('@shoelace-style/shoelace/dist/components/split-panel/split-panel.js');
+    await import('@shoelace-style/shoelace/dist/components/switch/switch.js');
+    await import('@shoelace-style/shoelace/dist/components/tab/tab.js');
+    await import('@shoelace-style/shoelace/dist/components/tab-group/tab-group.js');
+    await import('@shoelace-style/shoelace/dist/components/tab-panel/tab-panel.js');
+    await import('@shoelace-style/shoelace/dist/components/tag/tag.js');
+    await import('@shoelace-style/shoelace/dist/components/textarea/textarea.js');
+    await import('@shoelace-style/shoelace/dist/components/tooltip/tooltip.js');
+    await import('@shoelace-style/shoelace/dist/components/tree/tree.js');
+    await import('@shoelace-style/shoelace/dist/components/tree-item/tree-item.js');
+    await import('@shoelace-style/shoelace/dist/components/visually-hidden/visually-hidden.js');
+  }
+});
